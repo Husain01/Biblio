@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
+@import url("https://neu-ui-cl.netlify.app/css/components.css");
+
+:root{
+  --primary-color:#BAC8D3;
+  --text-color: white;
+  --bg-color:#3b3b3b;
+  --normal-inset-shadow:inset 5px 5px 10px #323232,
+  inset -5px -5px 10px #444444;
+  --normal-shadow:  5px 5px 10px #323232,
+  -5px -5px 10px #444444;
+  --primary-inset-shadow: inset 5px 5px 10px #9eaab3,
+  inset -5px -5px 10px #d6e6f3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6, p{
+  color: var(--text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.normal-shadow{
+  box-shadow:  5px 5px 10px #323232,
+  -5px -5px 10px #444444;
 }

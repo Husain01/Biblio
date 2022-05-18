@@ -1,0 +1,61 @@
+.authContainer {
+  width: 100%;
+  height: calc(100vh - 16rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authTitle {
+  text-align: center;
+}
+
+.authBox {
+  width: 30rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.form {
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.formGroup {
+  width: 100%;
+  color: var(--text-color);
+}
+
+.formGroup input {
+  width: 100%;
+  color: var(--text-color);
+}
+
+.belowPass {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rememberCheck {
+  display: flex;
+  column-gap: 0.5rem;
+  color: var(--text-color);
+}
+
+.rememberCheck input {
+  display: none;
+}
+
+.checkbox {
+  height: 1.5rem;
+  width: 1.5rem;
+  box-shadow: var(--normal-inset-shadow);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonSubmit {
+  width: 100%;
+}

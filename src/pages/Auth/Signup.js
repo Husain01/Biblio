@@ -14,6 +14,7 @@ export const Signup = () => {
     password: "",
     confirmPassword: "",
   });
+  const [loading, setLoading] = useState(false)
 
   const changeHandler = (e) => {
     const { name, value } = e.target;
@@ -37,6 +38,7 @@ export const Signup = () => {
     if (checkInputFields()) {
       if (checkPasswordHandler()) {
         try {
+          setLoading(true)
           const res = await createUserWithEmailAndPassword(
             auth,
             user.email,
@@ -57,6 +59,7 @@ export const Signup = () => {
         } catch (error) {
           alert(error);
         }
+        setLoading(false)
       }
     } else {
       alert("All the fields need to be entered!");
@@ -112,7 +115,8 @@ export const Signup = () => {
             </label>
           </div>
           <button
-            className={`btn btn-primary button-submit normal-shadow ${styles.buttonSubmit}`} // onClick={signUpHandler}
+            className={`btn btn-primary button-submit normal-shadow ${styles.buttonSubmit}`} 
+            disabled={loading}
             onClick={signUpHandler}
           >
             Sign Up

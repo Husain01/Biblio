@@ -15,7 +15,7 @@ export const Login = () => {
   });
   const guestUser = {
     email: "test@gmail.com",
-    password: "tester",
+    password: "password",
   };
   const changeHandler = (e) => {
     const { name, value } = e.target;

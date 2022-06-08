@@ -5,6 +5,7 @@ import { Home } from "./pages/Home/Home";
 import { Login, Signup } from "./pages/Auth";
 import { Rules } from "./pages/Rules/Rules";
 import { RequiresAuth } from "./RequiresAuth";
+import { Questions } from "./pages/Questions/Questions";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
             </RequiresAuth>
           }
         />
+        <Route path="/quiz/:quizId" element={<RequiresAuth>
+          <Questions/>
+          </RequiresAuth>
+          }/>
       </Routes>
     </div>
   );

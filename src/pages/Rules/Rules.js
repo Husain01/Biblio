@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Rules.css";
 
 export const Rules = () => {
+  const navigate = useNavigate();
+  const startQuizHandler = () => {
+    const quizId = sessionStorage.getItem("categoryId")
+    navigate(`/quiz/${quizId}`)
+  }
   return (
     <div className="content-container">
       <div className="center-content">
@@ -15,7 +21,7 @@ export const Rules = () => {
             attempting so please choose carefully.
           </p>
           <p>5. Click Submit to complete the quiz.</p>
-          <button className="btn btn-primary btn-rules">Continue</button>
+          <button className="btn btn-primary btn-rules" onClick={startQuizHandler}>Continue</button>
         </div>
       </div>
     </div>

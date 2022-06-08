@@ -3,8 +3,9 @@ import { QuizReducer } from "../../Reducer/QuizReducer/QuizReducer";
 
 const quizContext = createContext();
 const initialState = {
-    score: 0,
-    selectedQuestion: [],
+    totalScore: 0,
+    questions: [],
+    result: [],
 }
 
 const QuizProvider = ({children}) => {

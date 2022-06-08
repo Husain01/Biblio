@@ -2,6 +2,7 @@ import HPImg from '../../assets/HarryPotterCategoryImage.jpg';
 import GOTImg from '../../assets/GOTCategoryImage.jpg';
 export const quizQues = [
     {
+        categoryId: 1,
         category: "Harry Potter",
         categoryImg: HPImg,
         questions: [
@@ -98,6 +99,7 @@ export const quizQues = [
         ]
     },
     {
+        categoryId: 2,
         category: "Game Of Thrones",
         categoryImg: GOTImg,
         questions: [

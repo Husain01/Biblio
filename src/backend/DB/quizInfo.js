@@ -5,6 +5,7 @@ export const quizQues = [
         categoryId: 1,
         category: "Harry Potter",
         categoryImg: HPImg,
+        categoryDesc: "Get your thinking spells ready!",
         questions: [
             {
                 question: "Harrys uncle and aunt, the Dursleys,live at what address?",
@@ -102,6 +103,7 @@ export const quizQues = [
         categoryId: 2,
         category: "Game Of Thrones",
         categoryImg: GOTImg,
+        categoryDesc: "You Win or You Die!",
         questions: [
             {
                 question: "Which of the following was Sansa never married or engaged to?",

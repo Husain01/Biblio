@@ -4,7 +4,7 @@ import { useAuth } from './context/Auth/AuthContext';
 
 export const RequiresAuth = ({children}) => {
   const location = useLocation();
-  const {authStateL: {token}} = useAuth();
+  const {authState: {token}} = useAuth();
     return token ? (children) : (
         <Navigate to='/login' state={{from: location}} replace />
     )

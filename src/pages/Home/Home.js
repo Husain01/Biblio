@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import HPImg from '../../assets/HarryPotterCategoryImage.jpg';
 import GOTImg from '../../assets/GOTCategoryImage.jpg';
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -14,11 +15,13 @@ export const Home = () => {
               <img src={HPImg} alt="" />
             </div>
             <h5 className={styles.cardText}>Get your thinking spells ready!</h5>
+            <Link to="rules">
             <button
               className={`btn btn-primary ${styles.btnPlay} normal-shadow`}
             >
               Let's Play
             </button>
+            </Link>
           </div>
           <div className={`card ${styles.card} normal-shadow`}>
             <div className={styles.cardImg}>
@@ -28,11 +31,13 @@ export const Home = () => {
               />
             </div>
             <h5 className={styles.cardText}>You Win or You Die!</h5>
+            <Link to='rules'>
             <button
               className={`btn btn-primary ${styles.btnPlay} normal-shadow`}
             >
               Let's Play
             </button>
+            </Link>
           </div>
         </div>
       </div>

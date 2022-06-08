@@ -1,0 +1,18 @@
+.center-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.rules-content{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.btn-rules{
+    margin-top: 1rem;
+}

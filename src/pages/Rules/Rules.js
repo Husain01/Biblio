@@ -1,12 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useQuiz } from "../../context/QuizData/QuizDataContext";
 import "./Rules.css";
 
 export const Rules = () => {
   const navigate = useNavigate();
+  const {quizDispatch} = useQuiz();
   const startQuizHandler = () => {
     const quizId = sessionStorage.getItem("categoryId")
     navigate(`/quiz/${quizId}`)
+    quizDispatch({type: "RESET"})
   }
   return (
     <div className="content-container">

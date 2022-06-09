@@ -6,6 +6,7 @@ import { Login, Signup } from "./pages/Auth";
 import { Rules } from "./pages/Rules/Rules";
 import { RequiresAuth } from "./RequiresAuth";
 import { Questions } from "./pages/Questions/Questions";
+import { Results } from "./pages/Results/Results";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
           <Questions/>
           </RequiresAuth>
           }/>
+          <Route path="/results/:quizId" element={<RequiresAuth>
+            <Results/>
+            </RequiresAuth>
+            }/>
       </Routes>
     </div>
   );

@@ -3,8 +3,9 @@ import styles from './CategoryCard.module.css';
 import { Link } from 'react-router-dom';
 
 export const CategoryCard = ({categoryId, category, categoryImg,categoryDesc}) => {
-    const categoryCardHandler = (categoryId) => {
+    const categoryCardHandler = (categoryId, category) => {
         sessionStorage.setItem("categoryId", categoryId)
+        sessionStorage.setItem("category", category)
     }
   return (
 <div className={`card ${styles.card} normal-shadow`}>
@@ -15,7 +16,7 @@ export const CategoryCard = ({categoryId, category, categoryImg,categoryDesc}) =
             <Link to="rules">
             <button
               className={`btn btn-primary ${styles.btnPlay} normal-shadow`}
-              onClick={()=> categoryCardHandler(categoryId)}
+              onClick={()=> categoryCardHandler(categoryId, category)}
             >
               Let's Play
             </button>

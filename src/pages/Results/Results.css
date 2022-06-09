@@ -1,0 +1,36 @@
+.ques-set{
+    margin-bottom: 1rem;
+}
+
+.results-box{
+    width: 40%;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.correct-option{
+    background-color: #80FF67;
+}
+
+.wrong-option{
+    background-color: #FF8B86;
+}
+
+.go-back{
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: var(--normal-shadow);
+    padding:.3rem 2rem;
+    color: var(--bg-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+}
+
+
+.go-back:hover{
+    cursor: pointer;
+}

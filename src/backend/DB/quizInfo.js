@@ -167,7 +167,7 @@ export const quizQues = [
                         option: "Ned Stark",
                     },
                     {
-                        option: "Ned Stark",
+                        option: "Tyrion Lannister",
                     },
                     {
                         option: "Ser Davos Seaworth",

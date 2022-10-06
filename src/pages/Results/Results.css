@@ -34,3 +34,15 @@
 .go-back:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+    .results-box{
+     width: 80%;
+    } 
+ }
+ 
+ @media screen and (max-width: 480px) {
+     .results-box{
+         width: 100%;
+     }
+ }

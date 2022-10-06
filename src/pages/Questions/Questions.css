@@ -74,3 +74,15 @@
 .selecteOption{
     box-shadow: var(--normal-inset-shadow);
 }
+
+@media screen and (max-width: 900px) {
+   .question-box{
+    width: 80%;
+   } 
+}
+
+@media screen and (max-width: 480px) {
+    .question-box{
+        width: 100%;
+    }
+}

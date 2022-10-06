@@ -31,7 +31,7 @@ export const Navbar = () => {
         <i class="fas fa-search"></i>
         <input type="text" class="search-input" placeholder="Search" />
       </div>
-      <div class="nav-links">
+      <div class={`nav-links ${styles.navLinks}`}>
           {authState.token ? (<button
             className="btn btn-primary btn-login normal-shadow"
             onClick={logoutHandler}

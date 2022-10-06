@@ -1,5 +1,5 @@
 .mainContent {
-  height: calc(100vh - 20rem);
+  height: calc(100vh - 10rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,4 +49,21 @@
 }
 .btnPlay:hover {
   transform: scale(1.01);
+}
+
+@media screen and (max-width: 768px) {
+  .mainContent{
+    height: fit-content;
+  }
+
+  .cardWrapper{
+    gap: 0;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .contentContainer{
+    display: flex;
+    padding: 0;
+  }
 }

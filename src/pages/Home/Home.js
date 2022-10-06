@@ -5,7 +5,7 @@ import { quizQues } from "../../backend/DB/quizInfo";
 
 export const Home = () => {
   return (
-    <div className="content-container">
+    <div className={`content-container ${styles.contentContainer}`}>
       <div className={`main-content ${styles.mainContent}`}>
         <h3>Choose your Quiz</h3>
         <div className={`${styles.cardWrapper}`}>
